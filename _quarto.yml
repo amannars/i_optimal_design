@@ -3,12 +3,14 @@ project:
 
 book:
   title: "i_optimal_book"
-  author: "Norah Jones"
+  author: "Stu and Company"
   date: "3/2/2025"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - 05_preface.qmd
+    - 10_intro_to_r.qmd  
+    - 15_design_of_experiments.qmd
+    - 20_response_surface_models.qmd
     - references.qmd
 
 bibliography: references.bib

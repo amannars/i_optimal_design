@@ -1,0 +1,5 @@
+# Response Surface Models
+
+Response Surface Models (RSM) are used to predict the response of a system to different input variables. The RSM is a mathematical model that describes the relationship between the response and the input variables. The RSM is used to optimize the system by finding the input variables that will produce the desired response. The RSM is a useful tool for engineers and scientists who need to optimize a system with multiple input variables.
+
+

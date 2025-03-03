@@ -1,9 +1,133 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+**I-optimal Design of Experiments Using R**
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+1.  Preface
 
-```{r}
-1 + 1
-```
+2.  A Short Introduction to R
+
+    1.  R, R Studio, and user-written libraries
+
+    2.  Data types
+
+    3.  Reading and writing data
+
+    4.  Operations with vectors and matrices
+
+    5.  Logical operators
+
+    6.  Base R graphics
+
+    7.  Selected R libraries (plot3D, mix.DOE, and the optimization one)
+
+3.  Response Surface Models
+
+    1.  Amount models (Cartesian space)
+
+    2.  Mixture models (Simplex space)
+
+    3.  Mixture-amount models (Combined space)
+
+    4.  Mixture-process models (Combined space)
+
+    5.  Mixture-amount-process models (Combined space)
+
+4.  Constructing I-optimal Designs
+
+    1.  Point optimization
+
+        1.  Weighting matrix construction
+
+        2.  Space matrix construction
+
+        3.  Point selection and optimization
+
+    2.  Pick-and-exchange algorithms
+
+    3.  Design visualization using R
+
+5.  Experiments in 2-D Cartesian Space
+
+    1.  Unconstrained spaces
+
+    2.  Constrained spaces
+
+6.  Experiments in 3-D Cartesian Space
+
+    1.  Unconstrained spaces
+
+    2.  Constrained spaces
+
+7.  Experiments in 4-D and Higher Cartesian Spaces
+
+    1.  Unconstrained spaces
+
+    2.  Constrained spaces
+
+8.  3-Component Mixtures
+
+    1.  Unconstrained spaces
+
+    2.  Constrained spaces
+
+9.  4-Component Mixtures
+
+    1.  Unconstrained spaces
+
+    2.  Constrained spaces
+
+10. 5-Component and Higher Mixtures
+
+    1.  Unconstrained spaces
+
+    2.  Constrained spaces
+
+11. Mixture Experiments in the Complete Simplex
+
+    1.  3-component mixtures
+
+    2.  4-component mixtures
+
+    3.  5- and higher component mixtures
+
+12. Mixture Experiments in the Constrained Simplex
+
+    1.  3-component mixtures
+
+    2.  4-component mixtures
+
+    3.  5- and higher component mixtures 
+
+    4.  Design construction using R 
+
+        1.  Point optimization
+
+        2.  Pick-and-exchange
+
+    5.  Design visualization using R 
+
+13. Mixture-Amount Experiments
+
+    1.  3-component mixture-amount experiments
+
+    2.  4-component mixture-amount experiments
+
+    3.  5- and higher component mixture-amount experiments 
+
+    4.  Design construction using R 
+
+        1.  Point optimization
+
+        2.  Pick-and-exchange
+
+    5.  Design visualization using R
+
+14. Constrained Mixture-Amount Experiments
+
+15. Mixture-Processing Experiments
+
+16. Mixture-Amount-Processing Experiments
+
+17. Designs using Non-linear Response Surface Models
+
+Appendix 1 – Design Visualization Using ggplot
