@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Foundations of Optimal Experimental Design – i_optimal_book</title>
+<title>design_of_experiments</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,14 +58,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./20_response_surface_models.html" rel="next">
-<link href="./10_intro_to_r.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -135,119 +132,26 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./15_design_of_experiments.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Foundations of Optimal Experimental Design</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">i_optimal_book</a> 
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./05_preface.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Design of Experiments and Optimal Design</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./10_intro_to_r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Short Introduction to R</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./15_design_of_experiments.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Foundations of Optimal Experimental Design</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./20_response_surface_models.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Response Surface Models</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#design-matrix-models-and-information-matrix" id="toc-design-matrix-models-and-information-matrix" class="nav-link active" data-scroll-target="#design-matrix-models-and-information-matrix"><span class="header-section-number">3.1</span> Design Matrix, Models, and Information Matrix</a>
-  <ul class="collapse">
-  <li><a href="#the-design-matrix-and-linear-model-representation" id="toc-the-design-matrix-and-linear-model-representation" class="nav-link" data-scroll-target="#the-design-matrix-and-linear-model-representation"><span class="header-section-number">3.1.1</span> The Design Matrix and Linear Model Representation</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Foundations of Optimal Experimental Design</span></h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="design-matrix-models-and-information-matrix" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="design-matrix-models-and-information-matrix"><span class="header-section-number">3.1</span> Design Matrix, Models, and Information Matrix</h2>
-<section id="the-design-matrix-and-linear-model-representation" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="the-design-matrix-and-linear-model-representation"><span class="header-section-number">3.1.1</span> The Design Matrix and Linear Model Representation</h3>
+<section id="foundations-of-optimal-experimental-design" class="level1">
+<h1>Foundations of Optimal Experimental Design</h1>
+<section id="design-matrix-models-and-information-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="design-matrix-models-and-information-matrix">Design Matrix, Models, and Information Matrix</h2>
+<section id="the-design-matrix-and-linear-model-representation" class="level3">
+<h3 class="anchored" data-anchor-id="the-design-matrix-and-linear-model-representation">The Design Matrix and Linear Model Representation</h3>
 <p>In regression-based DOE, each run is associated with a vector of regressor values derived from the chosen model. Collecting these vectors for all runs forms the design matrix (commonly denoted <code>X</code>). For example, if we plan to fit a second-order (quadratic) model in two factors <code>X1</code> and <code>X2</code>, the regressor for a run with factor levels (x1, x2) would be:</p>
 <p><span class="math inline">\(f(x1,x2) = [1, x1, x2, x1x2, x1^2, x2^2]\)</span></p>
 <p>This includes an intercept, linear terms, interaction, and quadratics. The design matrix X has one row per run and one column per model term. This matrix encapsulates how the experimental settings relate to model predictions.</p>
@@ -269,6 +173,7 @@ window.Quarto = {
 </div>
 
 
+</section>
 </section>
 </section>
 
@@ -365,7 +270,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/amannars\.github\.io\/i_optimal_design\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -693,18 +598,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./10_intro_to_r.html" class="pagination-link" aria-label="A Short Introduction to R">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Short Introduction to R</span></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./20_response_surface_models.html" class="pagination-link" aria-label="Response Surface Models">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Response Surface Models</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 

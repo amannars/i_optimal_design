@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; A Short Introduction to R – i_optimal_book</title>
+<title>intro_to_r</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,14 +58,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./15_design_of_experiments.html" rel="next">
-<link href="./05_preface.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -106,168 +103,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./10_intro_to_r.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Short Introduction to R</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">i_optimal_book</a> 
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./05_preface.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Design of Experiments and Optimal Design</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./10_intro_to_r.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Short Introduction to R</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./15_design_of_experiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Foundations of Optimal Experimental Design</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./20_response_surface_models.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Response Surface Models</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#r-rstudio-and-user-written-libraries" id="toc-r-rstudio-and-user-written-libraries" class="nav-link active" data-scroll-target="#r-rstudio-and-user-written-libraries"><span class="header-section-number">2.1</span> R, RStudio, and User-Written Libraries</a>
-  <ul class="collapse">
-  <li><a href="#introduction-to-r" id="toc-introduction-to-r" class="nav-link" data-scroll-target="#introduction-to-r"><span class="header-section-number">2.1.1</span> Introduction to R</a></li>
-  <li><a href="#rstudio-ide" id="toc-rstudio-ide" class="nav-link" data-scroll-target="#rstudio-ide"><span class="header-section-number">2.1.2</span> RStudio IDE</a></li>
-  <li><a href="#installing-and-using-packages" id="toc-installing-and-using-packages" class="nav-link" data-scroll-target="#installing-and-using-packages"><span class="header-section-number">2.1.3</span> Installing and Using Packages</a></li>
-  </ul></li>
-  <li><a href="#data-types" id="toc-data-types" class="nav-link" data-scroll-target="#data-types"><span class="header-section-number">2.2</span> Data Types</a>
-  <ul class="collapse">
-  <li><a href="#basic-data-types" id="toc-basic-data-types" class="nav-link" data-scroll-target="#basic-data-types"><span class="header-section-number">2.2.1</span> Basic Data Types</a></li>
-  <li><a href="#data-structures" id="toc-data-structures" class="nav-link" data-scroll-target="#data-structures"><span class="header-section-number">2.2.2</span> Data Structures</a></li>
-  </ul></li>
-  <li><a href="#reading-and-writing-data" id="toc-reading-and-writing-data" class="nav-link" data-scroll-target="#reading-and-writing-data"><span class="header-section-number">2.3</span> Reading and Writing Data</a>
-  <ul class="collapse">
-  <li><a href="#basic-io-functions" id="toc-basic-io-functions" class="nav-link" data-scroll-target="#basic-io-functions"><span class="header-section-number">2.3.1</span> Basic I/O Functions</a></li>
-  <li><a href="#working-directory-and-paths" id="toc-working-directory-and-paths" class="nav-link" data-scroll-target="#working-directory-and-paths"><span class="header-section-number">2.3.2</span> Working Directory and Paths</a></li>
-  </ul></li>
-  <li><a href="#operations-with-vectors-and-matrices" id="toc-operations-with-vectors-and-matrices" class="nav-link" data-scroll-target="#operations-with-vectors-and-matrices"><span class="header-section-number">2.4</span> Operations with Vectors and Matrices</a>
-  <ul class="collapse">
-  <li><a href="#vectorized-arithmetic" id="toc-vectorized-arithmetic" class="nav-link" data-scroll-target="#vectorized-arithmetic"><span class="header-section-number">2.4.1</span> Vectorized Arithmetic</a></li>
-  <li><a href="#matrix-operations" id="toc-matrix-operations" class="nav-link" data-scroll-target="#matrix-operations"><span class="header-section-number">2.4.2</span> Matrix Operations</a></li>
-  </ul></li>
-  <li><a href="#logical-operators" id="toc-logical-operators" class="nav-link" data-scroll-target="#logical-operators"><span class="header-section-number">2.5</span> Logical Operators</a>
-  <ul class="collapse">
-  <li><a href="#basic-logical-operators" id="toc-basic-logical-operators" class="nav-link" data-scroll-target="#basic-logical-operators"><span class="header-section-number">2.5.1</span> Basic Logical Operators</a></li>
-  <li><a href="#vectorized-comparisons" id="toc-vectorized-comparisons" class="nav-link" data-scroll-target="#vectorized-comparisons"><span class="header-section-number">2.5.2</span> Vectorized Comparisons</a></li>
-  <li><a href="#subset-selection" id="toc-subset-selection" class="nav-link" data-scroll-target="#subset-selection"><span class="header-section-number">2.5.3</span> Subset Selection</a></li>
-  </ul></li>
-  <li><a href="#base-r-graphics" id="toc-base-r-graphics" class="nav-link" data-scroll-target="#base-r-graphics"><span class="header-section-number">2.6</span> Base R Graphics</a>
-  <ul class="collapse">
-  <li><a href="#base-plotting-system" id="toc-base-plotting-system" class="nav-link" data-scroll-target="#base-plotting-system"><span class="header-section-number">2.6.1</span> Base Plotting System</a></li>
-  <li><a href="#histograms-bar-plots-boxplots" id="toc-histograms-bar-plots-boxplots" class="nav-link" data-scroll-target="#histograms-bar-plots-boxplots"><span class="header-section-number">2.6.2</span> Histograms, Bar Plots, Boxplots</a></li>
-  </ul></li>
-  <li><a href="#selected-r-libraries-plot3d-mix.doe-and-an-optimization-library" id="toc-selected-r-libraries-plot3d-mix.doe-and-an-optimization-library" class="nav-link" data-scroll-target="#selected-r-libraries-plot3d-mix.doe-and-an-optimization-library"><span class="header-section-number">2.7</span> Selected R Libraries (plot3D, mix.DOE, and an Optimization Library)</a>
-  <ul class="collapse">
-  <li><a href="#plot3d" id="toc-plot3d" class="nav-link" data-scroll-target="#plot3d"><span class="header-section-number">2.7.1</span> plot3D</a></li>
-  <li><a href="#mix.doe" id="toc-mix.doe" class="nav-link" data-scroll-target="#mix.doe"><span class="header-section-number">2.7.2</span> mix.DOE</a></li>
-  <li><a href="#optimization-library-example-algdesign-or-skpr" id="toc-optimization-library-example-algdesign-or-skpr" class="nav-link" data-scroll-target="#optimization-library-example-algdesign-or-skpr"><span class="header-section-number">2.7.3</span> Optimization Library (Example: AlgDesign or skpr)</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Short Introduction to R</span></h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="r-rstudio-and-user-written-libraries" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="r-rstudio-and-user-written-libraries"><span class="header-section-number">2.1</span> R, RStudio, and User-Written Libraries</h2>
-<section id="introduction-to-r" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="introduction-to-r"><span class="header-section-number">2.1.1</span> Introduction to R</h3>
+<section id="a-short-introduction-to-r" class="level1">
+<h1>A Short Introduction to R</h1>
+<section id="r-rstudio-and-user-written-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="r-rstudio-and-user-written-libraries">R, RStudio, and User-Written Libraries</h2>
+<section id="introduction-to-r" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-to-r">Introduction to R</h3>
 <ul>
 <li><strong>Definition of R:</strong> R is an open-source language and environment focused on statistical computing and graphics. It is well-suited for data manipulation, exploration, and advanced analytics, making it a natural choice for experimental design.</li>
 <li><strong>Interpretation and Scripting:</strong> R can be used interactively at the console or through scripts, facilitating reproducible research.</li>
 <li><strong>Data Structures:</strong> R supports a variety of data structures, including vectors, matrices, data frames, and lists.</li>
 </ul>
 </section>
-<section id="rstudio-ide" class="level3" data-number="2.1.2">
-<h3 data-number="2.1.2" class="anchored" data-anchor-id="rstudio-ide"><span class="header-section-number">2.1.2</span> RStudio IDE</h3>
+<section id="rstudio-ide" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio-ide">RStudio IDE</h3>
 <ul>
 <li><strong>Overview of RStudio:</strong> RStudio is an Integrated Development Environment (IDE) that simplifies coding in R. It provides a console, source editor, environment tab, and plots pane in one interface.</li>
 <li><strong>Project-Based Workflow:</strong> Encourages best practices: keep project files, scripts, and data together. This is especially helpful for organizing experimental design projects.</li>
 </ul>
 </section>
-<section id="installing-and-using-packages" class="level3" data-number="2.1.3">
-<h3 data-number="2.1.3" class="anchored" data-anchor-id="installing-and-using-packages"><span class="header-section-number">2.1.3</span> Installing and Using Packages</h3>
+<section id="installing-and-using-packages" class="level3">
+<h3 class="anchored" data-anchor-id="installing-and-using-packages">Installing and Using Packages</h3>
 <ul>
 <li><strong>CRAN and Other Repositories:</strong> R packages are typically installed from CRAN. Some specialized packages may come from GitHub or other repositories.</li>
 <li><strong>User-Written Libraries:</strong> Researchers often share R libraries for custom functions. For instance, specialized DOE packages or domain-specific modeling tools.</li>
@@ -285,18 +155,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 </section>
-<section id="data-types" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="data-types"><span class="header-section-number">2.2</span> Data Types</h2>
-<section id="basic-data-types" class="level3" data-number="2.2.1">
-<h3 data-number="2.2.1" class="anchored" data-anchor-id="basic-data-types"><span class="header-section-number">2.2.1</span> Basic Data Types</h3>
+<section id="data-types" class="level2">
+<h2 class="anchored" data-anchor-id="data-types">Data Types</h2>
+<section id="basic-data-types" class="level3">
+<h3 class="anchored" data-anchor-id="basic-data-types">Basic Data Types</h3>
 <ul>
 <li><strong>Numerical:</strong> Floating-point (e.g., <code>3.14</code>) or integer (e.g., <code>1L</code>). Often represent factor levels.</li>
 <li><strong>Character:</strong> Strings used for labeling treatments or levels.</li>
 <li><strong>Logical:</strong> Boolean values (TRUE/FALSE) for conditions and subsetting.</li>
 </ul>
 </section>
-<section id="data-structures" class="level3" data-number="2.2.2">
-<h3 data-number="2.2.2" class="anchored" data-anchor-id="data-structures"><span class="header-section-number">2.2.2</span> Data Structures</h3>
+<section id="data-structures" class="level3">
+<h3 class="anchored" data-anchor-id="data-structures">Data Structures</h3>
 <ul>
 <li><strong>Vectors:</strong> One-dimensional collections of elements of the same type.</li>
 <li><strong>Matrices:</strong> Two-dimensional collections of the same type, crucial for design matrices in modeling.</li>
@@ -319,10 +189,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 </section>
-<section id="reading-and-writing-data" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="reading-and-writing-data"><span class="header-section-number">2.3</span> Reading and Writing Data</h2>
-<section id="basic-io-functions" class="level3" data-number="2.3.1">
-<h3 data-number="2.3.1" class="anchored" data-anchor-id="basic-io-functions"><span class="header-section-number">2.3.1</span> Basic I/O Functions</h3>
+<section id="reading-and-writing-data" class="level2">
+<h2 class="anchored" data-anchor-id="reading-and-writing-data">Reading and Writing Data</h2>
+<section id="basic-io-functions" class="level3">
+<h3 class="anchored" data-anchor-id="basic-io-functions">Basic I/O Functions</h3>
 <p>Reading Data:<br>
 - Base R: <code>read.csv()</code>, <code>read.table()</code>, <code>readRDS()</code>.<br>
 - Tidyverse readr: <code>readr::read_csv()</code>.<br>
@@ -330,8 +200,8 @@ Writing Data:<br>
 - Base R: <code>write.csv()</code>, <code>saveRDS()</code>.<br>
 - Tidyverse readr: <code>readr::write_csv()</code>.</p>
 </section>
-<section id="working-directory-and-paths" class="level3" data-number="2.3.2">
-<h3 data-number="2.3.2" class="anchored" data-anchor-id="working-directory-and-paths"><span class="header-section-number">2.3.2</span> Working Directory and Paths</h3>
+<section id="working-directory-and-paths" class="level3">
+<h3 class="anchored" data-anchor-id="working-directory-and-paths">Working Directory and Paths</h3>
 <p>Working Directory:<br>
 - <code>getwd()</code> shows the current directory; <code>setwd("path/to/dir")</code> sets it.<br>
 - Use RStudio Projects for automatic path management.</p>
@@ -347,18 +217,18 @@ Writing Data:<br>
 </div>
 </section>
 </section>
-<section id="operations-with-vectors-and-matrices" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="operations-with-vectors-and-matrices"><span class="header-section-number">2.4</span> Operations with Vectors and Matrices</h2>
-<section id="vectorized-arithmetic" class="level3" data-number="2.4.1">
-<h3 data-number="2.4.1" class="anchored" data-anchor-id="vectorized-arithmetic"><span class="header-section-number">2.4.1</span> Vectorized Arithmetic</h3>
+<section id="operations-with-vectors-and-matrices" class="level2">
+<h2 class="anchored" data-anchor-id="operations-with-vectors-and-matrices">Operations with Vectors and Matrices</h2>
+<section id="vectorized-arithmetic" class="level3">
+<h3 class="anchored" data-anchor-id="vectorized-arithmetic">Vectorized Arithmetic</h3>
 <ul>
 <li><strong>Element-wise Operations:</strong> +, -, *, / apply element by element.<br>
 </li>
 <li><strong>Recycling Rules:</strong> If vectors differ in length, the shorter one is recycled (be mindful of unintended consequences).</li>
 </ul>
 </section>
-<section id="matrix-operations" class="level3" data-number="2.4.2">
-<h3 data-number="2.4.2" class="anchored" data-anchor-id="matrix-operations"><span class="header-section-number">2.4.2</span> Matrix Operations</h3>
+<section id="matrix-operations" class="level3">
+<h3 class="anchored" data-anchor-id="matrix-operations">Matrix Operations</h3>
 <ul>
 <li><strong>Creation:</strong> <code>matrix(data, nrow, ncol)</code>, <code>rbind()</code>, <code>cbind()</code>.<br>
 </li>
@@ -383,21 +253,21 @@ Writing Data:<br>
 </div>
 </section>
 </section>
-<section id="logical-operators" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="logical-operators"><span class="header-section-number">2.5</span> Logical Operators</h2>
-<section id="basic-logical-operators" class="level3" data-number="2.5.1">
-<h3 data-number="2.5.1" class="anchored" data-anchor-id="basic-logical-operators"><span class="header-section-number">2.5.1</span> Basic Logical Operators</h3>
+<section id="logical-operators" class="level2">
+<h2 class="anchored" data-anchor-id="logical-operators">Logical Operators</h2>
+<section id="basic-logical-operators" class="level3">
+<h3 class="anchored" data-anchor-id="basic-logical-operators">Basic Logical Operators</h3>
 <ul>
 <li><strong>Comparison Operators:</strong> <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>, <code>==</code>, <code>!=</code>.</li>
 <li><strong>Logical Operators:</strong> <code>&amp;</code>, <code>|</code>, <code>!</code> for AND, OR, NOT.</li>
 </ul>
 </section>
-<section id="vectorized-comparisons" class="level3" data-number="2.5.2">
-<h3 data-number="2.5.2" class="anchored" data-anchor-id="vectorized-comparisons"><span class="header-section-number">2.5.2</span> Vectorized Comparisons</h3>
+<section id="vectorized-comparisons" class="level3">
+<h3 class="anchored" data-anchor-id="vectorized-comparisons">Vectorized Comparisons</h3>
 <p>Operations happen element-by-element. Use <code>any()</code> or <code>all()</code> to combine results.</p>
 </section>
-<section id="subset-selection" class="level3" data-number="2.5.3">
-<h3 data-number="2.5.3" class="anchored" data-anchor-id="subset-selection"><span class="header-section-number">2.5.3</span> Subset Selection</h3>
+<section id="subset-selection" class="level3">
+<h3 class="anchored" data-anchor-id="subset-selection">Subset Selection</h3>
 <ul>
 <li><strong>In base R</strong>, <code>[ ]</code> or <code>subset()</code>.</li>
 <li><strong>In the tidyverse</strong>, <code>dplyr::filter()</code> is frequently used.</li>
@@ -415,17 +285,17 @@ Writing Data:<br>
 </div>
 </section>
 </section>
-<section id="base-r-graphics" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="base-r-graphics"><span class="header-section-number">2.6</span> Base R Graphics</h2>
-<section id="base-plotting-system" class="level3" data-number="2.6.1">
-<h3 data-number="2.6.1" class="anchored" data-anchor-id="base-plotting-system"><span class="header-section-number">2.6.1</span> Base Plotting System</h3>
+<section id="base-r-graphics" class="level2">
+<h2 class="anchored" data-anchor-id="base-r-graphics">Base R Graphics</h2>
+<section id="base-plotting-system" class="level3">
+<h3 class="anchored" data-anchor-id="base-plotting-system">Base Plotting System</h3>
 <ul>
 <li><code>plot()</code>: Quick scatterplots; set arguments like <code>xlab</code>, <code>ylab</code>, <code>main</code>.</li>
 <li><strong>Add Lines/Points:</strong> <code>lines()</code>, <code>points()</code>, <code>abline()</code>, etc.</li>
 </ul>
 </section>
-<section id="histograms-bar-plots-boxplots" class="level3" data-number="2.6.2">
-<h3 data-number="2.6.2" class="anchored" data-anchor-id="histograms-bar-plots-boxplots"><span class="header-section-number">2.6.2</span> Histograms, Bar Plots, Boxplots</h3>
+<section id="histograms-bar-plots-boxplots" class="level3">
+<h3 class="anchored" data-anchor-id="histograms-bar-plots-boxplots">Histograms, Bar Plots, Boxplots</h3>
 <ul>
 <li><code>hist()</code>: Frequency histograms.</li>
 <li><code>barplot()</code>: For categorical or factor-based data.</li>
@@ -441,10 +311,10 @@ Writing Data:<br>
 </div>
 </section>
 </section>
-<section id="selected-r-libraries-plot3d-mix.doe-and-an-optimization-library" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="selected-r-libraries-plot3d-mix.doe-and-an-optimization-library"><span class="header-section-number">2.7</span> Selected R Libraries (plot3D, mix.DOE, and an Optimization Library)</h2>
-<section id="plot3d" class="level3" data-number="2.7.1">
-<h3 data-number="2.7.1" class="anchored" data-anchor-id="plot3d"><span class="header-section-number">2.7.1</span> plot3D</h3>
+<section id="selected-r-libraries-plot3d-mix.doe-and-an-optimization-library" class="level2">
+<h2 class="anchored" data-anchor-id="selected-r-libraries-plot3d-mix.doe-and-an-optimization-library">Selected R Libraries (plot3D, mix.DOE, and an Optimization Library)</h2>
+<section id="plot3d" class="level3">
+<h3 class="anchored" data-anchor-id="plot3d">plot3D</h3>
 <ul>
 <li><strong>Purpose:</strong> Functions like <code>scatter3D()</code>, <code>surf3D()</code>, and <code>contour3D()</code> for 3D visualization.<br>
 </li>
@@ -467,16 +337,16 @@ Writing Data:<br>
 <span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">"X"</span>, <span class="at">ylab =</span> <span class="st">"Y"</span>, <span class="at">zlab =</span> <span class="st">"Response"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="mix.doe" class="level3" data-number="2.7.2">
-<h3 data-number="2.7.2" class="anchored" data-anchor-id="mix.doe"><span class="header-section-number">2.7.2</span> mix.DOE</h3>
+<section id="mix.doe" class="level3">
+<h3 class="anchored" data-anchor-id="mix.doe">mix.DOE</h3>
 <ul>
 <li><strong>Purpose:</strong> Tools specialized for mixture designs (e.g., simplex-lattice, simplex-centroid).<br>
 </li>
 <li><strong>Integration:</strong> Often used with candidate sets for mixture experiments in combination with other DOE packages.</li>
 </ul>
 </section>
-<section id="optimization-library-example-algdesign-or-skpr" class="level3" data-number="2.7.3">
-<h3 data-number="2.7.3" class="anchored" data-anchor-id="optimization-library-example-algdesign-or-skpr"><span class="header-section-number">2.7.3</span> Optimization Library (Example: AlgDesign or skpr)</h3>
+<section id="optimization-library-example-algdesign-or-skpr" class="level3">
+<h3 class="anchored" data-anchor-id="optimization-library-example-algdesign-or-skpr">Optimization Library (Example: AlgDesign or skpr)</h3>
 <ul>
 <li><strong>AlgDesign:</strong> Classic package with <code>optFederov()</code> for constructing D-, I-, or other optimal designs.<br>
 </li>
@@ -517,6 +387,7 @@ Writing Data:<br>
 </ul>
 
 
+</section>
 </section>
 </section>
 
@@ -613,7 +484,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/amannars\.github\.io\/i_optimal_design\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -941,18 +812,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./05_preface.html" class="pagination-link" aria-label="Introduction to Design of Experiments and Optimal Design">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Design of Experiments and Optimal Design</span></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./15_design_of_experiments.html" class="pagination-link" aria-label="Foundations of Optimal Experimental Design">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Foundations of Optimal Experimental Design</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
