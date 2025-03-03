@@ -54,7 +54,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -103,14 +123,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="fullcontent">
+<body>
 
 <div id="quarto-search-results"></div>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="10_intro_to_r.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -124,7 +146,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introduction-to-r" class="level3">
 <h3 class="anchored" data-anchor-id="introduction-to-r">Introduction to R</h3>
 <ul>
-<li><strong>Definition of R:</strong> R is an open-source language and environment focused on statistical computing and graphics. It is well-suited for data manipulation, exploration, and advanced analytics, making it a natural choice for experimental design.</li>
+<li><strong>Definition of R:</strong> R is an open-source language and environment focused on statistical computing and graphics. It is well-suited for data manipulation, exploration, and advanced analytics, making it a natural choice for experimental design.<span class="citation" data-cites="mannarswamy2010a">(<a href="#ref-mannarswamy2010a" role="doc-biblioref">Mannarswamy et al. 2010</a>)</span></li>
 <li><strong>Interpretation and Scripting:</strong> R can be used interactively at the console or through scripts, facilitating reproducible research.</li>
 <li><strong>Data Structures:</strong> R supports a variety of data structures, including vectors, matrices, data frames, and lists.</li>
 </ul>
@@ -387,6 +409,11 @@ Writing Data:<br>
 </ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-mannarswamy2010a" class="csl-entry" role="listitem">
+Mannarswamy, Aravind, Stuart H. Munson-McGee, Robert Steiner, and Charles L. Johnson. 2010. <span>“Optimal Designs for Constant<span>-</span>Heating<span>-</span>Rate Differential Scanning Calorimetry Experiments for Polymerization Kinetics:<span><em>n</em></span>th<span>-</span>Order Kinetics.”</span> <em>Journal of Applied Polymer Science</em> 117 (4): 2133–39. <a href="https://doi.org/10.1002/app.31406">https://doi.org/10.1002/app.31406</a>.
+</div>
+</div>
 </section>
 </section>
 </section>
